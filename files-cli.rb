@@ -5,21 +5,21 @@
 class FilesCli < Formula
   desc "Official Pinata Files CLI written in Go"
   homepage "https://github.com/PinataCloud/files-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.0/files-cli_Darwin_x86_64.tar.gz"
-      sha256 "b125d1d41227b8f97d7986fe97513fe3cdfde790b21bad2f6627ef91b5c2e2d8"
+      url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.1/files-cli_Darwin_x86_64.tar.gz"
+      sha256 "4485cf809865c7c8f182a9407b8c019eb156b12e1a379d7b3b6fdb9edd508c27"
 
       def install
         bin.install "pinata"
       end
     end
     on_arm do
-      url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.0/files-cli_Darwin_arm64.tar.gz"
-      sha256 "64eae51a3d1e6cb9a16dd8b720649a4b3f5cf0bda369b55f679f97394e8acbe7"
+      url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.1/files-cli_Darwin_arm64.tar.gz"
+      sha256 "552034c80ccac0d3a5b147e6b91c8be0a6162efe18ed234a6fbabdc4acaaa8e6"
 
       def install
         bin.install "pinata"
@@ -30,8 +30,8 @@ class FilesCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.0/files-cli_Linux_x86_64.tar.gz"
-        sha256 "169f1884963f1a90914ca3ca42866e7ddd036bb3c6ff33de0cd401e4584fcfd9"
+        url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.1/files-cli_Linux_x86_64.tar.gz"
+        sha256 "0079902039cd7ed14038c1b34705e719293c82458ad0b715bf6bef5822e698c0"
 
         def install
           bin.install "pinata"
@@ -40,8 +40,8 @@ class FilesCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.0/files-cli_Linux_arm64.tar.gz"
-        sha256 "8cd237890366dfb3512747439359c4fcac46add2e7f13a23dc8b7bec80101c53"
+        url "https://github.com/PinataCloud/files-cli/releases/download/v0.2.1/files-cli_Linux_arm64.tar.gz"
+        sha256 "e879d26fb59604b9474a490d987e0119826d5cdbe2376a3a7e270b8aaf250fb5"
 
         def install
           bin.install "pinata"
